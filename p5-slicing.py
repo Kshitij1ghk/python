@@ -24,4 +24,20 @@ print(sum3)
 average=(sum1+sum2+sum3)/3
 print("the average of all sublists is: ",average)
 
-# aother way to do this code is 
+# aother way to do this code is by pyhton friendly way
+l=list()
+n=int(input("no of elements in list:"))
+for i in range(n):
+    l.append(int(input()))
+l1=l[0::2]
+l2=l[::-1][::3]
+l3=l[n//2::]
+sum1=sum(l1)
+sum2=sum(l2)
+sum3=sum(l3)
+average=(sum1+sum2+sum3)/3
+
+print("l1:",l1)
+print("l2:",l2)
+print("l3:",l3)
+print("the average of all sublist is:",average)
