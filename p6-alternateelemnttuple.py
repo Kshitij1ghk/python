@@ -19,3 +19,19 @@ def max_min(l):
 min,max=max_min(l)
 print("the minimum number is :",min)
 print("the maximum number is :",max)
+
+# using reccursions 
+l=[]
+n=int(input())
+for i in range(n):
+    l.append(input())
+t=tuple(l)
+print(t)
+def rev(t):
+    if len(t)==0:
+        return
+    print(t[0])
+    rev(t[2:])
+rev(t)
+# here rev(t[2:]) creates new tuple starting from index 2 and then prints 
+#value at index 0 and then calls rev(t[2:]) again
