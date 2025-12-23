@@ -1,11 +1,12 @@
+# for alternate values in atuple
 t=(10,20,30,40,50)
 def f(t):
     for i in range(0,len(t),2):
         print(t[i])
         i+=2
 f(t)
+# for max and min in alist
 l=[10,20,30,40,50,60]
-
 def max_min(l):
     max=l[0]
     min=l[0]
