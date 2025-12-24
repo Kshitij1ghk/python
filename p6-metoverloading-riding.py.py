@@ -27,4 +27,4 @@ class B(A):
     def m(self):
         print('bye')
 ob=B()
-ob.m() #prints bye since it overides the parent class 
+ob.m() #prints bye since it overides the parent class class A:
