@@ -1,5 +1,7 @@
-n=int(input("enter your damn numbers nigga"))
+n=int(input("enter your numbers"))
+num=1
 for i in range(n):
     for j in range(i+1):
-        print(i+j+1,end=" ")
+        print(num,end=" ")
+        num+=1
     print()
