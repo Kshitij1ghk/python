@@ -14,6 +14,10 @@ for i in range(0,n):
         print(string[i],end="")
     else:
         print()
+# in this method we loop through the string and print the string until we get a space
+# if we get a space then we print a new line
+# we use end="" to print the string in the same line
+
 # another method by me 
 string=input("enter your sentence")
 sum=""
@@ -25,3 +29,6 @@ for i in string:
         sum=""
 if sum:
     print(sum)
+#in this method we loop through the string and print the string until we get a space
+# if we get a space then we print the string and reset the string to ""
+# after resetting the string we loop through the string again and print the string until we get a space
