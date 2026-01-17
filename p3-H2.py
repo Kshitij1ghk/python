@@ -49,6 +49,10 @@ else:
             break
     else:
         print("number is prime ")
+# here we basically check as the prime number is only divisible by 1 and itself
+#so we run the loop till prime-1 and check if prime is divisible by any number in that range
+# if it is divisible then it is not a prime number
+# else it is a prime number
 
 # sum of all prime numbers till the input number
 n=int(input("enter your number"))

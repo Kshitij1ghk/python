@@ -1,4 +1,4 @@
-print('x={:},y={:}'.format('braintabs','pwlive'));
+print('x={:},y={:}'.format('braintabs','pwlive'))
 
 print('x={:>20},y={:>50}'.format('braintabs','pwlive'));
 #right alligns the string 20 or 50 - Minimum field width (total number of characters)
@@ -8,12 +8,12 @@ print('x={:>20},y={:>50}'.format('braintabs','pwlive'));
 print('x={:<20},y={:<50}'.format('braintabs','pwlive'));
 # same as above but left alligned 
 print('x={:-20},y={:-50}'.format(-100,+90));
-#The - in {:-20} is actually the sign option, not an alignment option. Here's what it means:
-#Sign option (-): This means to always show the sign of the number, even if it's positive. In this case, it adds a + sign to the positive number.
-# t creates a field width of 20 characters
-#Right-aligns the number (default for numbers)
-#Shows the sign only if the number is negative as you can see that if we put +90 it will not show + sign
-print('x={:+20},y={:+50}'.format(-100,+90));
+# The '-' in {:-20} is a SIGN option, not an alignment option.
+# '-' means: show the sign ONLY if the number is negative (this is the default behavior).
+# That’s why -100 still shows '-' — the minus is part of the number itself.
+# For +90, no '+' is shown because '-' does not display a plus sign for positive numbers.
+# The number is right-aligned by default and placed in a field width of 20 (or 50).
+# {:-20} behaves the same as {:20}.
 #Shows the sign for both positive and negative numbers
 print('x={:,},y={:,}'.format(-1000000,-9000000))
 # this will add comma in the numbers as in output for thousands
@@ -28,7 +28,7 @@ print('x={:x},y={:x}'.format(90,66))
 # here x is for hexadecimal
 print('x={:X},y={:X}'.format(90,66989))
 # here X is for hexadecimal in uppercase
-print('x={:e},y={:E}'.format(90,66))
+print('x={:e},y={:E}'.format(90,66))       
 # here e is for exponential
 print('x={:f},y={:F}'.format(90.5453453,66.6567547543))
 # here f is for float
